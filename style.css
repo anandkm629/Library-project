@@ -1,0 +1,72 @@
+body {
+    background-image: url(background_image.jpg);
+    font-family: "Trebuchet MS", "serif";
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; 
+    background-color: #FEFDED;
+}
+
+h1 {
+    text-align: center;
+}
+.newBtn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: inline-block;
+    background-color: #C6EBC5;
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #A1C398;
+}
+#booksContainer {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap-reverse;   
+}
+
+.card {
+    display: inline-block;
+    background-color: #fefdedb0;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.card:hover{
+    background-color: #FEFDED;
+}
+.card p{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.card h2{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+::backdrop {
+    /* background-image: linear-gradient(to bottom, rgba(1.5, 0, 0, 0.7), rgba(2, 0, 0, 0.7));
+    opacity: 0.75; */
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+form{
+    width: 200px;
+}
+
+.read{
+    color: rgb(0, 165, 0);
+}
+.notRead{
+    color: rgb(194, 175, 0)
+}

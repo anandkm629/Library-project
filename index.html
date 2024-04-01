@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Library</h1>
+    <div class="newBtn">
+        <button id="newBookBtn">New Book</button>
+    </div>
+
+    <div id="booksContainer"></div>
+
+    <dialog id="newBookDialog">
+        <form id="bookForm">
+            <p>
+                <label>
+                    Book Name: <input name="bookName" type="text" required/>
+                    Author : <input name="author" type="text" required/>
+                    Number of Pages : <input name="numOfPages" type="St"/><br>
+                    Is Read:
+                    <select name="isRead">
+                        <option >No</option>
+                        <option >Yes</option>
+                    </select>
+                </label>
+            </p>
+            <div class="newBtn">
+               <button formmethod="dialog" formnovalidate>Cancel</button>
+               <button id="confirm">Add Book</button> 
+            </div>
+        </form>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+</html>
